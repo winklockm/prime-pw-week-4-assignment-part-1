@@ -30,10 +30,12 @@ function addNumbers( firstNumber , secondNumber) {
 console.log('Test - should say "30"', addNumbers(10, 20));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(firstNumber, secondNumber, thirdNumber){
+  console.log('multiply', firstNumber, 'and', secondNumber, 'and', thirdNumber);
+  let answer = firstNumber*secondNumber*thirdNumber;
+  return answer;
 }
-
+console.log('Test - should say "24"', multiplyThree(2, 3, 4));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
