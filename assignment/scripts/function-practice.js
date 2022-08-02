@@ -72,9 +72,17 @@ console.log('Test - should say "undefined"', getLast([]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for(item of array){
+    if(item === value){
+      console.log('find ', value, ' in ', array)
+      return true;
+    }
+  }
+  console.log('find ', value, ' in ', array);
+  return false;
 }
-
+console.log('Test - should say "true"', find(7, [4, 7, 9]));
+console.log('Test - should say "false"', find(11, [4, 7, 9]));
 // ----------------------
 // Stretch Goals
 // ----------------------
