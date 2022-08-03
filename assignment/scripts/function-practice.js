@@ -116,6 +116,33 @@ console.log('Test - should say "12"', sumAll([1, 1, 10]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+let newArray = [];
+
+function positiveArray(inputArray) {   
+  for(number of inputArray){
+    console.log('number is: ',number);
+    if(number > 0){
+      console.log('add to newArray');
+      newArray.push(number);
+    }
+    else{
+      console.log('do not add');
+    }
+  }
+  return newArray;
+}
+
+console.log(positiveArray([0, 0, -5,]));
+console.log(positiveArray([7, 7, 0, -5,]));
+
+//enter inputArray
+//look at first index of array. Is it greater than zero?
+//if it is, add (push) that number into newArray and say "added to newArray"
+//if it is not, have it say "not positive"
+
+
+
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
