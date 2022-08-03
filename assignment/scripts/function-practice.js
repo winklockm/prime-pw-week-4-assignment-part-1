@@ -135,16 +135,18 @@ function positiveArray(inputArray) {
 console.log(positiveArray([0, 0, -5,]));
 console.log(positiveArray([7, 7, 0, -5,]));
 
-//enter inputArray
-//look at first index of array. Is it greater than zero?
-//if it is, add (push) that number into newArray and say "added to newArray"
-//if it is not, have it say "not positive"
-
-
-
-
-
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//Function for finding the perimeter of a rectangle
+
+function perim(length, width) {
+  let perimeter = ((length + width)*2);
+  console.log('Perimeter of rectangle with length', length, 'and width', width, ':');
+  return perimeter;
+}
+console.log(perim(6, 7));
+console.log(perim(20, 10));
+console.log(perim(2, 9));
